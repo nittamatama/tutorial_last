@@ -34,5 +34,6 @@ module Myapp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.hosts << '.example.com'
   end
 end
