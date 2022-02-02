@@ -10,5 +10,9 @@ RSpec.describe "StaticPages", type: :request do
       get static_pages_help_path
       expect(response.status).to eq 200
     end
+    it "aboutアクションにリクエストすると正常にレスポンスが返ってくる" do
+      get static_pages_about_path
+      expect(response.status).to eq 200
+    end
   end
 end
